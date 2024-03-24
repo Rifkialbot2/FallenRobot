@@ -87,7 +87,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="☆° ﾟHelp ﾟ°☆", callback_data="help_back"),
+        InlineKeyboardButton(text="☆° ﾟHelpﾟ°☆", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(text="About Me˜”°º×", callback_data="fallen_"),
@@ -102,8 +102,7 @@ HELP_STRINGS = f"""
 ☆｡･::･ﾟ★,｡･::･ﾟ☆
 🎀help menu,
 🎀You can use /start to go back
-✿✼:ﾟ:.｡..｡.:･ﾟﾟ･*
-"""
+✿✼:ﾟ:.｡..｡.:･ﾟﾟ･*."""
 
 IMPORTED = {}
 MIGRATEABLE = []
