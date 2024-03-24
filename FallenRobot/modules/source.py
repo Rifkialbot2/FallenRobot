@@ -9,27 +9,25 @@ from telethon import __version__ as s
 from FallenRobot import BOT_NAME, BOT_USERNAME, OWNER_ID, START_IMG, pbot
 
 
-@pbot.on_message(filters.command(["repo", "source"]))
+@pbot.on_message(filters.command(["listbot", "bot"]))
 async def repo(_, message: Message):
     await message.reply_photo(
         photo=START_IMG,
         caption=f"""**ʜᴇʏ {message.from_user.mention},
 
-ɪ ᴀᴍ [{BOT_NAME}](https://t.me/{BOT_USERNAME})**
-
-**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ :** 𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦
-**» ᴩʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{y()}`
-**» ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{o}` 
-**» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{s}` 
-**» ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{z}`
+felin bot list ✧✧✦
+Manage Bot »
+@skytrixszbot
+Menfess »
+@skytrixszrobot
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", user_id=OWNER_ID),
+                    InlineKeyboardButton("♡¸.•* Owner", user_id=OWNER_ID),
                     InlineKeyboardButton(
-                        "sᴏᴜʀᴄᴇ",
-                        url="https://github.com/AnonymousX1025/FallenRobot",
+                        "Support *•.¸♡",
+                        url="t.me/wibuhouse",
                     ),
                 ]
             ]
@@ -37,4 +35,4 @@ async def repo(_, message: Message):
     )
 
 
-__mod_name__ = "Rᴇᴩᴏ"
+__mod_name__ = "List Bot"
